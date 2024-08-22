@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-category {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    margin-right: -5px;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-left: none;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+    color: #333;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>Search</h1>
+        <form class="search-form">
+            <select class="search-category">
+                <option value="web-development">Web Development</option>
+                <option value="java">Java</option>
+                <option value="cpp">C++</option>
+                <option value="c">C</option>
+                <option value="data-analyst">Data Analyst</option>
+            </select>
+            <input type="text" class="search-input" placeholder="Type to search...">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </div>
+</body>
+</html>
